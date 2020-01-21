@@ -34,6 +34,7 @@ $(document).ready(function(){
     // $("#social-nav li:gt(2)").css({ border: "2px dotted red" });
 
     // ATTRIBUTE FILTERS
+
     // go after every div that has a class..
     // $("div[class]").css({ border: "2px dotted green" });
 
@@ -48,7 +49,12 @@ $(document).ready(function(){
     // go after every image that has alt "quote"
     //$("img[alt=quote]").css({ border: "2px dotted red" });
 
-    // DOM TRAVERSING
+
+
+
+    ////////////////////
+    // DOM TRAVERSING //
+    ////////////////////
 
     // next(), find the next element on the same level (not child, not parent) ... DOWN ARROW
     // $("#contact-methods").next().css("border", "2px dotted red");
@@ -74,7 +80,16 @@ $(document).ready(function(){
     // closest() find closest PARENT up the tree, by whatever class or id you specify
     // $("#social-nav").closest(".wrapper").css("border", "3px solid red");
 
+
+
+
+    //////////////
+    // CHAINING //
+    //////////////
     
+    /* $("#contact-methods").css({ border: "2px solid red" })
+    .next().css({ border: "2px solid green" })
+    .closest("section").css({ border: "2px solid blue" }); */
     
 
 })
