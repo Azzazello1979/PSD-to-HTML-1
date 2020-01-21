@@ -7,6 +7,9 @@ $(document).ready(function(){
     // FILTERS ... refining selection //
     ////////////////////////////////////
 
+    // :eq() equals ... pick one from the array
+    // $("#contact-methods li:eq(2)").css("border", "2px dotted red");
+
     // firs & last occurance
     // $("header nav li:first").css({ border: "2px solid red" });
     // $("header nav li:last").css({ border: "2px solid red" });
@@ -45,6 +48,33 @@ $(document).ready(function(){
     // go after every image that has alt "quote"
     //$("img[alt=quote]").css({ border: "2px dotted red" });
 
+    // DOM TRAVERSING
+
+    // next(), find the next element on the same level (not child, not parent) ... DOWN ARROW
+    // $("#contact-methods").next().css("border", "2px dotted red");
+
+    // prev(), find the previous element on the same level ... UP ARROW
+    // $("#clients blockquote").prev().css("border", "2px dotted red");
+
+    // parent(), find the element one level up the tree ... UP ONE FOLDER
+    // $("#contact-methods").parent().css("border", "2px dotted red");
+
+    // parents(), selects all the parents up the way ...
+
+    // children(), find the element one level down the tree ... ENTER FOLDER
+    // $("#contact-methods li:eq(2)").children().css("color", "green");
+
+    // more specifically, use .eq(1) - index number one from array
+    // $("#contact-methods li:eq(2)").children().eq(1).css("color", "green");
+
+    // find() ... finds specified element by tag name / class name / id name
+    // $("#contact").find("span").css("border", "1px dotted orange");
+    // $("#contact").find(".twitter").css("border", "1px dotted orange");
+
+    // closest() find closest PARENT up the tree, by whatever class or id you specify
+    // $("#social-nav").closest(".wrapper").css("border", "3px solid red");
+
+    
     
 
 })
