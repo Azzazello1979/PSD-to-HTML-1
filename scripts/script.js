@@ -266,17 +266,31 @@ $(document).ready(function(){
     }) */
 
     // toggle Class
-    let myLis = $("#points-of-sale li")
+    /* let myLis = $("#points-of-sale li")
     myLis.on("click", function(){
         //console.log( $(this).children().eq(2)[0] );
         $(this).children().eq(2).toggleClass("some");
         
         
+    }) */
+
+
+
+
+    ///////////////////
+    // EVENT HELPERS //
+    ///////////////////
+
+    // shorthand for on() and off()
+    $("#contact img").dblclick(function(){
+        alert('You dbl clicked the map!')
     })
 
-
-
-
+    // same as...
+    
+    /* $("#contact img").on('dblclick', function(){
+        alert('You dbl clicked the map!')
+    }) */
     
 
 
