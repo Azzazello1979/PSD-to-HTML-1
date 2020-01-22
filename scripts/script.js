@@ -239,11 +239,48 @@ $(document).ready(function(){
         return false; // cancel default behavior of anchor that would navigate away
     }) */
 
-    /* $("#lead-banner a").on("click", function(){
+    $("#lead-banner a").on("click", function(){
         console.log("hiiii");
         $("#points-of-sale").toggleClass("open")
         return false; // cancel default behavior of anchor that would navigate away
+    })
+
+
+
+
+    ///////////////////
+    // EVENT BINDING //
+    /////////////////////////////////////////////////////
+    // React to events consistently in all browsers... //
+    /////////////////////////////////////////////////////
+
+    // on() - binds an event to matched element(s)
+    // off() - unbinds event from matched elements()
+    
+    /* let myLis = $("#points-of-sale li")
+    myLis.on("click", function(){
+        //console.log(this) // this is the actually selected element, you cant use "this" if you use arrow function above because then "this" will refer to the window object.
+        $(this).find("p").css({ color: "red" })
+        // now unbind event so another click cannot change color of another <li> <p>
+        myLis.off("click")
     }) */
+
+    // toggle Class
+    let myLis = $("#points-of-sale li")
+    myLis.on("click", function(){
+        //console.log( $(this).children().eq(2)[0] );
+        $(this).children().eq(2).toggleClass("some");
+        
+        
+    })
+
+
+
+
+    
+
+
+
 
 
 

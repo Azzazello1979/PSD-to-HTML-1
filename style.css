@@ -241,7 +241,7 @@ section#points-of-sale ul{
     width: 80%;
     margin: 0 10%;
     font-size: 14px;
-    color: #888;
+    color: blue;
     line-height: 1.4em;
 }
 
@@ -355,6 +355,10 @@ section#points-of-sale ul{
 .open{
     height: auto !Important;
 }
+.some{
+    font-size: xx-large !Important;
+}
+
 
 
 
