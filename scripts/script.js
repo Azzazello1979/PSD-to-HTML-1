@@ -345,4 +345,40 @@ $(document).ready(function(){
 
 
 
+    ///////////////////////
+    // JQUERY ANIMATIONS //
+    ///////////////////////
+
+    // css() - changes the style but no animation
+    /* $("section > h2").on("click", function(){
+        $(this).css({ width: "500px", height: "100px" })
+    }) */
+
+    // animate() - changes the style with animation
+    // only where you have numeric values
+    // second param. is speed, in milliseconds, default is 400
+    // third param. is "swing" or "linear" - default is swing, its nicer
+    // fourth param. fire function after anim. complete, callback func.
+    const greeting = () => {
+        alert("heeey")
+    }
+
+    // this will call greeting function as callback, when anim is completed
+    $("section > h2").on("click", function(){
+        $(this).animate({ width: "500px", height: "100px" }, 1000, "swing", greeting )
+    })
+
+    // this will call greeting function right away ....
+    /* $("section > h2").on("click", function(){
+        $(this).animate({ width: "500px", height: "100px" }, 1000, "swing", greeting() )
+    }) */
+
+    
+
+
+
+
+
+
+
 })
