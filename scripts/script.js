@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     // $("h3").css("border", "1px solid blue"); // for applying one css prop.
-    // $("#lead-banner").css({ border: "1px solid green", width: "100px" }); // for applying multiple css props. in an object
+    // $("#lead-banner").css({ border: "1px solid green", width: "100px" }); // for applying multiple css props. in one go
 
     ////////////////////////////////////
     // FILTERS ... refining selection //
@@ -173,6 +173,25 @@ $(document).ready(function(){
     //$("#contact img").removeAttr("alt");
     //$("#contact img").attr("alt", "this is the alt message");
     //console.log( $("#contact img").attr("alt") );
+
+
+
+
+    /////////////////////
+    // CONTROLLING CSS //
+    /////////////////////
+
+    // css() read or set/update css property
+    // console.log( $("#social-nav").css("position") );
+    // $("#social-nav").css("top", "-200px");
+    $("#social-nav").css({
+        top: "-400px",
+        left: "150px",
+        opacity: "0.5",
+        'border-top': "4px solid red"
+    })
+
+
 
 
 })
