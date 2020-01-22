@@ -282,16 +282,52 @@ $(document).ready(function(){
     ///////////////////
 
     // shorthand for on() and off()
-    $("#contact img").dblclick(function(){
+    /* $("#contact img").dblclick(function(){
         alert('You dbl clicked the map!')
-    })
+    }) */
 
     // same as...
-    
+
     /* $("#contact img").on('dblclick', function(){
         alert('You dbl clicked the map!')
     }) */
-    
+
+
+
+
+    /////////////////////
+    // DOCUMENT READY ///
+    /////////////////////
+    // waits for the html tags to be fully loaded, but not the images!
+    // DOM
+
+    $(document).on("ready", function(){
+        // ....
+    })
+
+    $(document).ready(function(){
+        // ....
+    })
+
+    $(function(){
+        // ....
+    })
+
+    ////////////////////
+    // WINDOW ON LOAD //
+    ////////////////////
+    // waits for the html tags to be fully loaded as well as waits for images to be fully loaded
+    // DOM + images
+
+    $(window).on("load", function(){
+        // ....
+    })
+
+    $(window).load(function(){
+        // ....
+    })
+
+
 
 
 
