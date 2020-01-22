@@ -22,6 +22,18 @@ $(document).ready(function(){
        //
        // after you have unwrapped from jQuery, you cannot use any jQuery method on it
 
+       // HOWEVER
+
+       // $("#comments[0]") ... is the 1st comment if comments returns jQuery array!
+       //
+       // same as
+       //
+       // $("#comments").eq(0) ... is the 1st comment if comments returns jQuery array!
+       //
+       // however
+       //
+       // $("#comments")[0] ... exits the jQuery object, goes to VJS mode
+
 
 
     // $("h3").css("border", "1px solid blue"); // for applying one css prop.
@@ -416,7 +428,7 @@ $(document).ready(function(){
     //////////////////////
 
     // slideUp() and slideDown() change the height of the target, they dont actually slide
-    $(".slide-button-up").on("click", function(){
+    /* $(".slide-button-up").on("click", function(){
         $("#lead-banner").slideUp(1000, "swing", function(){
             alert("its up")
         })
@@ -430,8 +442,44 @@ $(document).ready(function(){
         $("#lead-banner").slideToggle(1000, "swing", function(){
             alert('animation done')
         })
-    })
+    }) */
 
+
+
+
+    /////////////////
+    // QUOTE FADER //
+    /////////////////
+
+    /* const quotes = [
+        'Roses are red',
+        'Violets are blue',
+        'I like to make money too',
+        'I shot the sherrif',
+        'Water is clear'
+    ];
+
+    let quotesI = 0;
+
+    function showQuotes(){
+        if(quotesI !== quotes.length){
+            $("#clients div").html(`<p>${quotes[quotesI]}</p>`).hide()
+            .show(2000).hide(2000, function(){
+                quotesI ++;
+                showQuotes();
+            });
+        } else {
+            quotesI = 0;
+            showQuotes();
+        }   
+    }
+
+    showQuotes(); */
+
+    
+    
+
+    
 
 
 
