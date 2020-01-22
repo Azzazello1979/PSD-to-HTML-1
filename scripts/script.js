@@ -91,6 +91,9 @@ $(document).ready(function(){
     .next().css({ border: "2px solid green" })
     .closest("section").css({ border: "2px solid blue" }); */
     
+
+
+
     ///////////////////////////////
     // ADDING - REMOVING content //
     ///////////////////////////////
@@ -113,6 +116,36 @@ $(document).ready(function(){
     // $("#tweets h2").text("I changed the heading!");
 
 
+
+
+    //////////////////////////////////////
+    // WRAPPING and UNWRAPPING elements //
+    //////////////////////////////////////
+
+    // wrap() & unwrap() - wraps nodes individually in a given tag, just put the opening tag
+    // for unwrap(), no argument needed
+    // $("section").wrap("<div>");
+    // $("section").unwrap();
+    // $("#tweets div p").unwrap();
+
+    // wrapAll() - same as wrap() except does not wrap elements individually, wraps them as a whole
+    // $("section").wrapAll("<div>");
+
+    let wrapper = "<div class='wrapper'>";
+    let button = $(".button");
+    let wrapped = true;
+
+    button[0].addEventListener('click', function(){
+        if(wrapped){
+            $("section").unwrap();
+            wrapped = false;
+            button.text("Wrap!");
+        }else{
+            $("section").wrapAll(wrapper);
+            wrapped = true;
+            button.text("Unwrap!");
+        }
+    })
 
 
 
