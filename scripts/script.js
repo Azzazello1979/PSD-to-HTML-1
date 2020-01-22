@@ -221,4 +221,30 @@ $(document).ready(function(){
 
 
 
+    //////////////////////////
+    // MANIPULATING CLASSES //
+    //////////////////////////
+
+    // removeClass() - removes a class from the matchedelement(s)
+    // $("header .wrapper").removeClass("wrapper");
+
+    // addClass() - adds a class to the matched element(s)
+    // select header element, go after its 1st child div (that has no class because we just deleted it above) 
+    // $("header > div").addClass("wrapper");
+
+    // toggleClass() - toggles the class on and off on the matched element(s)
+    /* $("#lead-banner a").on("click", function(){
+        console.log("hiiii");
+        $("#points-of-sale").toggle().css("border", "5px solid blue")
+        return false; // cancel default behavior of anchor that would navigate away
+    }) */
+
+    /* $("#lead-banner a").on("click", function(){
+        console.log("hiiii");
+        $("#points-of-sale").toggleClass("open")
+        return false; // cancel default behavior of anchor that would navigate away
+    }) */
+
+
+
 })
