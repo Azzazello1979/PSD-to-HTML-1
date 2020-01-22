@@ -355,27 +355,39 @@ $(document).ready(function(){
     }) */
 
     // animate() - changes the style with animation
-    // only where you have numeric values
+    // CAN ANIMATE ANYTHIG THAT HAS NUMERICAL VALUES, IN CSS
     // second param. is speed, in milliseconds, default is 400
     // third param. is "swing" or "linear" - default is swing, its nicer
     // fourth param. fire function after anim. complete, callback func.
-    const greeting = () => {
+    /* const greeting = () => {
         alert("heeey")
-    }
+    } */
 
     // this will call greeting function as callback, when anim is completed
-    $("section > h2").on("click", function(){
+    /* $("section > h2").on("click", function(){
         $(this).animate({ width: "500px", height: "100px" }, 1000, "swing", greeting )
-    })
+    }) */
 
     // this will call greeting function right away ....
     /* $("section > h2").on("click", function(){
         $(this).animate({ width: "500px", height: "100px" }, 1000, "swing", greeting() )
     }) */
 
-    
 
+    /////////////////////
+    // FADING ELEMENTS //
+    /////////////////////
 
+    // fadeOut(time) ... fades out and then is removed from the DOM
+    // fadeIn(time) ... fades in
+    /* $("section > h2").on("click", function(){
+        $(this).fadeOut(1000).fadeIn(500)
+    }) */
+
+    // fadeTo(time, opacity)
+    $("section > h2").on("click", function(){
+        $(this).fadeTo(500, 0.1).fadeTo(500, 1)
+    })
 
 
 
