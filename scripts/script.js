@@ -148,6 +148,8 @@ $(document).ready(function(){
     }) */
 
 
+
+
     //////////////////////
     // REMOVING CONTENT //
     //////////////////////
@@ -159,6 +161,18 @@ $(document).ready(function(){
     //$(".button").remove();
 
 
+
+
+    /////////////////////////
+    // CHANGING ATTRIBUTES //
+    /////////////////////////
+
+    // removeAttr() - removes an attribute completely
+    // attr() - reads or sets/changes attribute
+
+    //$("#contact img").removeAttr("alt");
+    //$("#contact img").attr("alt", "this is the alt message");
+    //console.log( $("#contact img").attr("alt") );
 
 
 })
