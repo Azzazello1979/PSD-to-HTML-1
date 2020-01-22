@@ -131,7 +131,7 @@ $(document).ready(function(){
     // wrapAll() - same as wrap() except does not wrap elements individually, wraps them as a whole
     // $("section").wrapAll("<div>");
 
-    let wrapper = "<div class='wrapper'>";
+    /* let wrapper = "<div class='wrapper'>";
     let button = $(".button");
     let wrapped = true;
 
@@ -145,10 +145,18 @@ $(document).ready(function(){
             wrapped = true;
             button.text("Unwrap!");
         }
-    })
+    }) */
 
 
+    //////////////////////
+    // REMOVING CONTENT //
+    //////////////////////
 
+    // empty() -- empties the innerHTML, but leaves the HTML in the DOM
+    // remove() -- removes node from the DOM
+
+    //$(".button").empty();
+    //$(".button").remove();
 
 
 
