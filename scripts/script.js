@@ -301,7 +301,7 @@ $(document).ready(function(){
     // waits for the html tags to be fully loaded, but not the images!
     // DOM
 
-    $(document).on("ready", function(){
+    /* $(document).on("ready", function(){
         // ....
     })
 
@@ -311,7 +311,7 @@ $(document).ready(function(){
 
     $(function(){
         // ....
-    })
+    }) */
 
     /////////////////
     // WINDOW LOAD //
@@ -319,17 +319,28 @@ $(document).ready(function(){
     // waits for the html tags to be fully loaded as well as waits for images to be fully loaded
     // DOM + images
 
-    $(window).on("load", function(){
+    /* $(window).on("load", function(){
         // ....
     })
 
     $(window).load(function(){
         // ....
-    })
+    }) */
 
 
 
 
+    ////////////////////////////////
+    // THE EVENT OBJECT IN JQUERY //
+    ////////////////////////////////
+    // consistent across all browsers ...
+
+    // **** CHECK OUT ANYTHING YOU CLICK ON **** 
+    // select all elements "*"
+    /* $("*").on("click", function(event){
+        console.log('Event obj is: ' , event)
+        event.stopPropagation()
+    }) */
 
 
 
