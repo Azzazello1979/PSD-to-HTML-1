@@ -404,9 +404,37 @@ $(document).ready(function(){
     }) */
 
     // toggle(time)
-    $("img[alt=map]").on("click", function(){
+    /* $("img[alt=map]").on("click", function(){
         $("section > h2").toggle(300)
-    }) 
+    })  */
+
+
+
+
+    //////////////////////
+    // SLIDING ELEMENTS //
+    //////////////////////
+
+    // slideUp() and slideDown() change the height of the target, they dont actually slide
+    $(".slide-button-up").on("click", function(){
+        $("#lead-banner").slideUp(1000, "swing", function(){
+            alert("its up")
+        })
+    })
+    $(".slide-button-down").on("click", function(){
+        $("#lead-banner").slideDown(1000, "linear", function(){
+            alert("its down")
+        })
+    })
+    $(".slide-button-toggle").on("click", function(){
+        $("#lead-banner").slideToggle(1000, "swing", function(){
+            alert('animation done')
+        })
+    })
+
+
+
+
 
 
 
