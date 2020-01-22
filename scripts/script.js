@@ -91,5 +91,33 @@ $(document).ready(function(){
     .next().css({ border: "2px solid green" })
     .closest("section").css({ border: "2px solid blue" }); */
     
+    ///////////////////////////////
+    // ADDING - REMOVING content //
+    ///////////////////////////////
+
+    // append() and prepend() ... same level
+    // let tweet1 = "<div>This is an appended tweet</div>"
+    // let tweet2 = "<div>This is a prepended tweet</div>"
+
+    // $("#tweets div").append(tweet1);
+    // $("#tweets div").prepend(tweet2);
+
+    // before() and after() ... same level
+    // $("#tweets div p").before(tweet2);
+    // $("#tweets div p").after(tweet1);
+
+    // html() HTML format - replace the whole content - lets you work with html tags as well(like innerHTML in VJS)
+    // $("#tweets div").html(tweet1);
+
+    // text() plain text format - replace only the text - no html tags allowed(like innerText in VJS)
+    // $("#tweets h2").text("I changed the heading!");
+
+
+
+
+
+
+
+
 
 })
