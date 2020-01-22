@@ -1,5 +1,27 @@
 $(document).ready(function(){
     
+    /////////////////////////////////////
+    // UNWRAPPING A JQUERY OBJ = ARRAY //
+    //   switching bw jQuery and vjs   //
+    /////////////////////////////////////
+
+    // All jQuery methods return a jQuery object, that is actuall an array.
+    
+       // console.log( $("#social-nav") )
+       // $("#social-nav") is a jQuery obj/arr, so you can chain any jQuery method to it
+       //
+       // to unwrap it from jQuery, and to use native Vanilla JS features on it, 
+       // simply call [0] on it, the 1st element in the jQuery obj/arr is 
+       // the native JS version of the element, not a jQuery obj/arr any more
+       //
+       // check:
+       //
+       // console.log( $("#social-nav")[0] )
+       //
+       // after you have unwrapped from jQuery, you cannot use any jQuery method on it
+
+
+
     // $("h3").css("border", "1px solid blue"); // for applying one css prop.
     // $("#lead-banner").css({ border: "1px solid green", width: "100px" }); // for applying multiple css props. in one go
 
@@ -184,12 +206,17 @@ $(document).ready(function(){
     // css() read or set/update css property
     // console.log( $("#social-nav").css("position") );
     // $("#social-nav").css("top", "-200px");
-    $("#social-nav").css({
+
+    /* $("#social-nav").css({
         top: "-400px",
         left: "150px",
         opacity: "0.5",
         'border-top': "4px solid red"
-    })
+    }) */
+
+    // set one property, then read it
+    /* $("#social-nav").children().eq(0).css("color", "red")
+    console.log( $("#social-nav").children().eq(0).css("color") ) */
 
 
 
