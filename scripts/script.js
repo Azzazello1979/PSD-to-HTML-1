@@ -313,9 +313,9 @@ $(document).ready(function(){
         // ....
     })
 
-    ////////////////////
-    // WINDOW ON LOAD //
-    ////////////////////
+    /////////////////
+    // WINDOW LOAD //
+    /////////////////
     // waits for the html tags to be fully loaded as well as waits for images to be fully loaded
     // DOM + images
 
