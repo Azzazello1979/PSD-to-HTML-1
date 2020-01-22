@@ -1,5 +1,7 @@
 $(document).ready(function(){
     
+    // CHECK OUT CURRENT VERSION AND DOCUMENTATION //
+
     /////////////////////////////////////
     // UNWRAPPING A JQUERY OBJ = ARRAY //
     //   switching bw jQuery and vjs   //
@@ -385,10 +387,26 @@ $(document).ready(function(){
     }) */
 
     // fadeTo(time, opacity)
-    $("section > h2").on("click", function(){
+    /* $("section > h2").on("click", function(){
         $(this).fadeTo(500, 0.1).fadeTo(500, 1)
-    })
+    }) */
 
+
+
+    ////////////////////////
+    // HIDE, SHOW, TOGGLE //
+    ////////////////////////
+
+    // hide(time) - changes elements display:none over time, element slides out of view 
+    // show(time) - opposite
+    /* $("section > h2").on("click", function(){
+        $(this).hide(300).show(300)
+    }) */
+
+    // toggle(time)
+    $("img[alt=map]").on("click", function(){
+        $("section > h2").toggle(300)
+    }) 
 
 
 
