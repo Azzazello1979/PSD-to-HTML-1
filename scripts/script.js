@@ -482,9 +482,18 @@ $(document).ready(function(){
         $(this).find("p").slideToggle(500);
     } )
     
-    
 
+
+
+    //////////////////////////////////////////
+    // USING A PLUGIN - responsiveslides.js //
+    //////////////////////////////////////////
+    // http://responsiveslides.com
     
+    $(".rslides").responsiveSlides({
+        nav:true,
+        pause:true,
+    })
 
 
 
