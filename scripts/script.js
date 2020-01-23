@@ -253,11 +253,11 @@ $(document).ready(function(){
         return false; // cancel default behavior of anchor that would navigate away
     }) */
 
-    $("#lead-banner a").on("click", function(){
+   /*  $("#lead-banner a").on("click", function(){
         console.log("hiiii");
         $("#points-of-sale").toggleClass("open")
         return false; // cancel default behavior of anchor that would navigate away
-    })
+    }) */
 
 
 
@@ -428,7 +428,7 @@ $(document).ready(function(){
     //////////////////////
 
     // slideUp() and slideDown() change the height of the target, they dont actually slide
-    /* $(".slide-button-up").on("click", function(){
+    $(".slide-button-up").on("click", function(){
         $("#lead-banner").slideUp(1000, "swing", function(){
             alert("its up")
         })
@@ -442,7 +442,7 @@ $(document).ready(function(){
         $("#lead-banner").slideToggle(1000, "swing", function(){
             alert('animation done')
         })
-    }) */
+    })
 
 
 
@@ -476,6 +476,11 @@ $(document).ready(function(){
 
     showQuotes(); */
 
+    // slideToggle() click on images, p will disappear/appear
+    let items = $("#points-of-sale li");
+    items.click( function(){
+        $(this).find("p").slideToggle(500);
+    } )
     
     
 
